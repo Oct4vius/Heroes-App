@@ -9,15 +9,19 @@ import { HeroPageComponent } from './pages/heroPage/heroPage.component';
 import { ListPageComponent } from './pages/listPage/listPage.component';
 import { NewPageComponent } from './pages/newPage/newPage.component';
 import { SearchPageComponent } from './pages/searchPage/searchPage.component';
+import { CardComponent } from './components/card/card.component';
+import { HeroesImagePipe } from './pipes/heroesImage.pipe';
 
 
 @NgModule({
   declarations: [
+    CardComponent,
     HeroPageComponent,
     LayoutPageComponent,
     ListPageComponent,
     NewPageComponent,
     SearchPageComponent,
+    HeroesImagePipe
   ],
   imports: [
     CommonModule,
