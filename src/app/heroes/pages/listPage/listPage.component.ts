@@ -13,7 +13,6 @@ export class ListPageComponent implements OnInit {
 
   public heroes: Hero[] = []
 
-
   ngOnInit(): void {
     this.heroesService.getHeroes()
       .subscribe(heroes => this.heroes = heroes)
