@@ -13,17 +13,17 @@ import { SearchPageComponent } from './pages/searchPage/searchPage.component';
 import { CardComponent } from './components/card/card.component';
 
 import { HeroesImagePipe } from './pipes/heroesImage.pipe';
+import { ConfirmDialogComponent } from './components/confirmDialog/confirmDialog.component';
 
 @NgModule({
   declarations: [
     CardComponent,
+    ConfirmDialogComponent,
     HeroPageComponent,
     LayoutPageComponent,
     ListPageComponent,
     NewPageComponent,
     SearchPageComponent,
-
-
 
     //Pipes
     HeroesImagePipe
