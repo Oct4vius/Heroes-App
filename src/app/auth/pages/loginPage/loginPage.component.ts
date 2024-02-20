@@ -8,16 +8,11 @@ import { Router } from '@angular/router';
   styles: ``,
 })
 export class LoginPageComponent {
+  constructor(private authService: AuthService, private router: Router) {}
 
-  constructor( private authService: AuthService, private router: Router ) { }
-
-  onLogin(){
-    this.authService.login('octavio@gmail.com', '123456')
-      .subscribe( user => {
-
-        this.router.navigate(['/']);
-
-      })
+  onLogin(): void {
+    this.authService.login('octavio@gmail.com', '123456').subscribe((user) => {
+      this.router.navigate(['/']);
+    });
   }
-
 }
